@@ -4,23 +4,29 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
    <content>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="Registrar">
-            <items>
-              <MenuItem fx:id="menuItemProduto" mnemonicParsing="false" onAction="#onMenuItemProdutoAction" text="Produto" />
-              <MenuItem fx:id="menuitemVenda" mnemonicParsing="false" onAction="#onMenuItemVendaAction" text="Venda" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
+      <VBox prefHeight="318.0" prefWidth="447.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Registrar">
+                  <items>
+                    <MenuItem fx:id="menuItemProduto" mnemonicParsing="false" onAction="#onMenuItemProdutoAction" text="Produto" />
+                        <MenuItem fx:id="menuItemVenda" mnemonicParsing="false" onAction="#onMenuItemVendaAction" text="Venda" />
+                  </items>
+                </Menu>
+                <Menu fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
    </content>
 </ScrollPane>
