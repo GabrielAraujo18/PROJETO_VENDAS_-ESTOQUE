@@ -29,7 +29,7 @@ public class MainViewController implements Initializable {
 
 	@FXML
 	public void onMenuItemProdutoAction() {
-		System.out.println("onMenuItemProdutoAction");
+		loadView("/gui/ProductList.fxml");
 
 	}
 
